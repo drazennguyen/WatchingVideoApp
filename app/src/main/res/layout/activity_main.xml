@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="cse.hcmut.advance.watchingvideoapp.ui.MainActivity"
+    android:orientation="vertical"
+    android:id="@+id/fragment_fullscreen">>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:background="#ff0000"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:background="#5a5a5a"
+            android:gravity="center"
+            android:orientation="vertical">
+            
+            <ImageButton
+                android:id="@+id/btnVoice"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_mic"
+                android:scaleType="fitCenter"
+                android:background="@drawable/button_background">
+            </ImageButton>
+            
+            <TextView
+                android:id="@+id/txtVoiceStatus"
+                android:visibility="invisible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffffff"
+                android:text="Click to Voice"
+                android:textSize="20dp">
+            </TextView>
+            
+            
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.8"
+            android:background="#00ff00">
+
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:background="#5a5a5a"
+                android:gravity="center"
+                android:orientation="vertical">
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25"
+                android:background="#5a5a5a"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btnStar"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_star"
+                    android:scaleType="fitCenter"
+                    android:background="@drawable/button_background">
+                </ImageButton>
+
+                <TextView
+                    android:id="@+id/txtStarStatus"
+                    android:visibility="invisible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffffff"
+                    android:text="Popular"
+                    android:textSize="20dp">
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.125"
+                android:background="#5a5a5a"
+                android:gravity="center"
+                android:orientation="vertical">
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25"
+                android:background="#5a5a5a"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btnActionMovie"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_actionmovie"
+                    android:scaleType="fitCenter"
+                    android:background="@drawable/button_background">
+                </ImageButton>
+
+                <TextView
+                    android:id="@+id/txtActionMovieStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Action"
+                    android:textColor="#ffffffff"
+                    android:textSize="20dp"
+                    android:visibility="invisible"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.125"
+                android:background="#5a5a5a"
+                android:gravity="center"
+                android:orientation="vertical">
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25"
+                android:background="#5a5a5a"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btnAdventureMovie"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/button_background"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_adventuremovie"></ImageButton>
+
+                <TextView
+                    android:id="@+id/txtAdventureMovieStatus"
+                    android:visibility="invisible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffffff"
+                    android:text="Adventure"
+                    android:textSize="20dp">
+                </TextView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.125"
+                android:background="#5a5a5a"
+                android:gravity="center"
+                android:orientation="vertical"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25"
+                android:background="#5a5a5a"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btnDocumentaryMovie"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/button_background"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_documentaymovie"></ImageButton>
+
+                <TextView
+                    android:id="@+id/txtDocumentaryMovieStatus"
+                    android:visibility="invisible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffffff"
+                    android:text="Doc"
+                    android:textSize="20dp">
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.125"
+                android:background="#5a5a5a"
+                android:gravity="center"
+                android:orientation="vertical">
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.25"
+                android:background="#5a5a5a"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btnFavorite"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_favorite"
+                    android:scaleType="fitCenter"
+                    android:background="@drawable/button_background">
+                </ImageButton>
+
+                <TextView
+                    android:id="@+id/txtFavoriteStatus"
+                    android:visibility="invisible"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffffff"
+                    android:text="Favorite"
+                    android:textSize="20dp">
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:background="#5a5a5a"
+                android:gravity="center"
+                android:orientation="vertical">
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:background="#5a5a5a"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/btnSetting"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_setting"
+                android:scaleType="fitCenter"
+                android:background="@drawable/button_background">
+            </ImageButton>
+
+            <TextView
+                android:id="@+id/txtSettingStatus"
+                android:visibility="invisible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffffff"
+                android:text="Setting"
+                android:textSize="20dp">
+            </TextView>
+            
+        </LinearLayout>
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:background="#a6a6a6">
+
+        <FrameLayout
+            android:id="@+id/fragment_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
